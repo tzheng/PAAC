@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PAAC Mobile</title>
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-timepicker.min.css" />
+		<link rel="stylesheet" href="css/custom.css"/>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inside">
+				<div class="navtitle"><p class="lead">PAAC</p></div>
+			</div>
+		</div>
+		
+		
+		<div class="content">
+			<form>
+				<div class="form-multiple">
+					<div class="form-line">
+						<label class="float-left">From</label>
+						<input class="float-left input-medium" id="location-from" placeholder="From" type="text" />
+						<a class="btn float-left" href="#"><i class="icon-map-marker"> </i></a>
+					</div>
+					<div class="form-line">
+						<label class="float-left">To&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						<input class="float-left input-medium" id="location-to" placeholder="Destination" type="text" />
+						<a class="btn float-left" id="favlist" href="#"><i class="icon-list"></i></a>
+					</div>
+					<div class="form-line timeinput bootstrap-timepicker" >
+						<label class="float-left">Time</label>
+	            		<input id="timepicker1" class="input-medium" type="text">	
+	            		<a class="btn" id="timepickerbtn" href="#"><i class="icon-time"></i></a>
+	        			<script type="text/javascript">
+	            			$('#timepicker1').timepicker();
+	        			</script>
+	        			
+					</div>
+					<button class="btn searchbtn btn-large">Get Direction <i class="icon-search"></i></button>
+				</div>
+			</form>
+		</div>
+		<hr />
+		<div id="indexnav">
+			<ul class="indexul">
+				<li>
+					<a class="btn" href="favorite.html">
+						<i class="icon-info-sign"></i><br />
+						Fare 
+					</a>
+				</li>
+				<li>
+					<a class="btn" href="favorite.html">
+						<i class="icon-calendar"></i><br />
+						Schedule
+					</a>
+				</li>
+				<li>
+					<a class="btn" href="favorite.html">
+						<i class="icon-star"></i><br />
+						Favorite
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,302 @@
+body {
+
+}
+#sr-body {
+	/* background: rgb(237,237,237); */
+	background: #F5F5F5;
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar {
+	background-color: rgb(43,150,229);
+	height: 40px;
+}
+
+.lead {
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+
+.navbar-inside {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.navbtn {
+	width: 80px;
+	padding-left: 30px;
+	float: left;
+}
+
+.navtitle {
+	text-align: center;
+	width: 60%;
+	float: left;
+}
+
+.title {
+	float: left;
+	text-align: center;
+}
+
+.backbtn {
+	float: left;
+	margin-left: 30px;
+}
+
+.content {
+	width: 100%;
+	margin-top: 60px;
+}
+#content form {
+	margin: 0px auto;
+}
+
+.title {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 1.5em;
+	margin-top: .5em;
+}
+
+.form-multiple {
+	width: 260px;
+	margin: 0px auto;
+}
+
+.form-line {
+	clear: both;
+	width: 260px;
+}
+
+.form-line label {
+	margin-top: 3px;
+}
+
+.float-left {
+	float: left;
+	margin-right: 5px;
+}
+
+#timepickerbtn {
+	margin-top: -10px;
+	margin-left: 2px;
+}
+
+.searchbtn {
+	width: 245px;
+}
+
+.indexul {
+	list-style: none;
+	display: inline;
+}
+
+.indexul li {
+	float: left;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.indexul li a {
+	width: 50px;
+}
+
+#indexnav {
+	width: 300px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+
+/* search result list */
+
+#sr-content {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	box-shadow: 2 2px 5px #FFFFFF;
+	border-bottom: 1px solid #DFDFDF;
+	width: 100%;
+	background-color: #FFFFFF;
+	z-index: 9999;
+	
+}
+
+.sr-listpage {
+	height: 80px;
+}
+
+
+.sr-li {
+	font-size: 16px;
+}
+
+.sr-li span {
+	color: #A0A0A0;
+	width: 50px;
+}
+
+
+.results {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+.result-condition {
+	line-height: 1em;
+	height: 60px;
+}
+.result-list {
+	list-style: none;
+	margin: 0 auto;
+	width: 95%;
+}
+
+.result-box {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	box-shadow: 1px 1px 10px #DFDFDF;
+	border-radius: 2px;
+	border: 1px solid #DFDFDF;
+	height: 75px;
+	background-color: #FFFFFF;
+}
+
+.result-list a {
+	text-decoration: none;
+	color: #000000;
+}
+
+
+.firstline {
+	margin-top: 0px;
+	margin-left: 10px;
+	height: 15px;
+}
+
+.secondline {
+	text-align: left;
+	margin-top: 0px;
+	height: 50px;
+}
+
+.thirdline {
+	text-align: left;
+	margin-top: 0px;
+	margin-left: 10px;
+	height: 10px;
+}
+
+.route {
+	padding-top: 15px;
+	padding-left: 10px;
+	font-size: 36px;
+	color: #404040;
+}
+
+.via {
+	color: #A0A0A0;
+	font-weight: 600;
+}
+
+.box-brief {
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+
+/* defaultresult.html*/
+.detail-top {
+	height: 80px;
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.detail-top .row-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.detail-content {
+	text-align: center;
+	height: 120px;
+}
+
+#buttongroup {
+	text-align: center;
+	margin-top: -5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.btn-custom {
+	width: 75px;
+}
+
+#map-canvas {
+	width: 100%;
+	margin: -10px auto;
+	height: 240px;
+}
+
+/** favorite **/ 
+
+.bs-docs-sidenav {
+  width: 300px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          
+	list-style: none;
+}
+
+
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+}
+
+
+
+/* Chevrons */
+.bs-docs-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+
+.favaddr {
+	color: rgb(143,143,143);
+}
+
+.favrout {
+	color: rgb(143,143,143);
+	text-align: left;
+}
