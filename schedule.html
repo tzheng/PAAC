@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PAAC Mobile</title>
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-timepicker.min.css" />
+		<link rel="stylesheet" href="css/custom.css"/>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGdwkMRFHDfnrS1mBTFG7cBskYGqg_ebU&sensor=true"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $(".show_hide").show();
+			    $('.show_hide').click(function(){
+			    	$(".slidingDiv").slideToggle();
+			    });
+			});
+
+		</script>
+	</head>
+	<body id="sr-body">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inside">
+				<div class="navbtn"><a class="btn btn-primary" href="index.html"><i class="icon-chevron-left icon-white"></i> Back</a></div>
+				<div class="navtitle"><p class="lead">Bus Schedule</p></div>
+			</div>
+		</div>
+		<div style="background:#ffffff; padding-bottom: 5px;">
+			<a href="#" class="show_hide btn" style="margin-top: 45px; margin-left: 5px;">Show/hide Conditions</a>
+		</div>
+		<div id="sr-content" class="sr-listpage slidingDiv" style="height: 160px; margin-top: 0px; padding-top: 0px;">
+			<form>
+				<div class="form-multiple">
+					<div style="padding-top: 10px;">
+						<div class="form-line">
+							<label class="float-left">Bus Route</label>
+							<select style="float: left;" class="input-medium">
+							  <option>71A</option>
+							  <option>61B</option>
+							  <option>28X</option>
+							  <option>P3</option>
+							  <option>75</option>
+							</select>
+						</div>
+						<div class="form-line">
+							<label class="float-left">Direction</label>
+							<div>
+								<label class="radio inline" style="margin-top: -5px;">
+								  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								  Inbound
+								</label>
+								<label class="radio inline" style="margin-top: -5px;">
+								  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+								  Outbound
+								</label>
+							</div>
+						</div>
+						<div class="form-line timeinput" >
+							<div>
+								<label class="float-left">Day</label>
+			            		<select style="float: left;" class="input-small">
+								  <option>Monday</option>
+								  <option>Tuesday</option>
+								  <option>Wednesday</option>
+								  <option>Thursday</option>
+								  <option>Friday</option>
+								  <option>Saturday</option>
+								  <option>Sunday</option>
+								</select>
+		            		</div>	
+		            		<div>
+			            		<label class="float-left" style="padding-left: 5px;">Time</label>
+			            		<select style="float: left;" class="input-small">
+								  <option>0 AM</option>
+								  <option>1 AM</option>
+								  <option>2 AM</option>
+								</select>
+		            		</div>
+						</div>
+						<button class="btn searchbtn btn-large">Get Schedule <i class="icon-search"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+		<div class="results">
+			<table class="table table-striped" >
+				<thead>
+					<tr>
+						<th>Start</th>
+						<th>Trip Description</th>
+						<th>Stop Location</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<td>1:45P</td>
+						<td>PGH INT'L AIRPORT VIA ROBINSON TOWN CTR</td>
+						<td>Forbes Ave at Morewood Ave Fs</td>
+					</tr>
+					<tr>
+						<td>2:45P</td>
+						<td>PGH INT'L AIRPORT VIA ROBINSON TOWN CTR</td>
+						<td>Forbes Ave at Morewood Ave Fs</td>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+		<!--
+		<div id="sr-content" class="detail-content">
+			<form>
+				<div class="form-multiple">
+					<div style="padding-top: 10px;">
+						<div class="form-line">
+							<label class="float-left">Bus Route</label>
+							<select style="float: left;" class="input-medium">
+							  <option>71A</option>
+							  <option>61B</option>
+							  <option>28X</option>
+							  <option>P3</option>
+							  <option>75</option>
+							</select>
+						</div>
+						<div class="form-line">
+							<label class="float-left">Direction</label>
+							<div>
+								<label class="radio inline" style="margin-top: -5px;">
+								  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								  Inbound
+								</label>
+								<label class="radio inline" style="margin-top: -5px;">
+								  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+								  Outbound
+								</label>
+							</div>
+						</div>
+						<div class="form-line timeinput" >
+							<div>
+								<label class="float-left">Day</label>
+			            		<select style="float: left;" class="input-small">
+								  <option>Monday</option>
+								  <option>Tuesday</option>
+								  <option>Wednesday</option>
+								  <option>Thursday</option>
+								  <option>Friday</option>
+								  <option>Saturday</option>
+								  <option>Sunday</option>
+								</select>
+		            		</div>	
+		            		<div>
+			            		<label class="float-left" style="padding-left: 5px;">Time</label>
+			            		<select style="float: left;" class="input-small">
+								  <option>0 AM</option>
+								  <option>1 AM</option>
+								  <option>2 AM</option>
+								</select>
+		            		</div>
+						</div>
+						<button class="btn searchbtn btn-large">Get Schedule <i class="icon-search"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div>
+			<table class="table table-striped" style="width: 240px;">
+				<thead>
+					<tr>
+						<td>Start</td>
+						<td>Trip Description</td>
+						<td>Stop Location</td>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<td>1:45 pm</td>
+						<td>PGH INT'L AIRPORT VIA ROBINSON TOWN CTR</td>
+						<td>Forbes Ave at Morewood Ave Fs</td>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	-->
+
+
+	</body>
+</html>
